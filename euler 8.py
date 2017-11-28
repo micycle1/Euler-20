@@ -23,6 +23,5 @@ BIGNUM = ("""
 05886116467109405077541002256983155200055935729725
 71636269561882670428252483600823257530420752963450""".replace("\n", ""))
 
-
 def euler_8():
-    return max(functools.reduce(operator.mul, list( int(x) for x in BIGNUM[i:i+13]), 1) for i in range( len(BIGNUM)))
+    return max(functools.reduce(operator.mul, list(int(x) for x in BIGNUM[i:i + 13]), 1) for i in range(len(BIGNUM)))

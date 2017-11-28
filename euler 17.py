@@ -1,5 +1,5 @@
 def euler_17():
-    return sum ( len(word) for n in range(1,1000) for word in n_to_string(n) ) + sum(len(word) for word in ["one","thousand"])
+    return sum (len(word) for n in range(1, 1000) for word in n_to_string(n)) + sum(len(word) for word in ["one", "thousand"])
 
 def n_to_string(n):
     words = []

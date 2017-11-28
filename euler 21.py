@@ -6,12 +6,12 @@ def euler_21():
 def factor(n):
     factors1 = []
     factors2 = []
-    for i in range(1,math.ceil(n ** 0.5)+1):
-        if (n/i).is_integer():
+    for i in range(1, math.ceil(n ** 0.5) + 1):
+        if (n / i).is_integer():
             factors1.append(i)
 
     for item in factors1:
-        factors2.append(int(n/item))
+        factors2.append(int(n / item))
         
     factors2.reverse()
     

@@ -1,8 +1,2 @@
-sequence = []
-for a in range(2,101):
-    for b in range(2,101):
-        if not a ** b in sequence:
-            sequence.append(a ** b)
-
-print(len(sequence))
-        
+def euler_29():
+    return len(set([a ** b for a in range(2, 101) for b in range(100)]))
